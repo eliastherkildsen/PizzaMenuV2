@@ -34,6 +34,7 @@ public class Main {
             }
             // checks if the user wants to go to receipt.
             else if (input == 0){
+                // break if user has finished ordering.
                 break;
             }
 
@@ -153,6 +154,7 @@ public class Main {
             }
         }
 
+        // calculates the total price for the selected pizza.
         float totalPrice = pizzaPrice + toppingPrice;
         System.out.printf("Total pizza price: %-20sDDK %.2f%s\n\n", ANSI_GREEN, totalPrice, ANSI_RESET );
 
@@ -172,7 +174,7 @@ public class Main {
     private static String createPizzaID() {
 
 
-
+        // initializes the return var.
         String pizzaID = "";
 
         do {
@@ -197,6 +199,7 @@ public class Main {
                 pizzaID += getToppings();
                 // adds the pizza size to pizza id.
                 pizzaID += pickPizzaSize();
+                // breakes when the pizza order is complete.
                 break;
 
             }
@@ -208,6 +211,7 @@ public class Main {
 
         } while (true);
 
+        // returns the pizza attributes.
         return pizzaID;
 
     }
@@ -230,11 +234,12 @@ public class Main {
                 // checks if input is negativ.
                 if ( returnValue >= 0)
                 {
+                    // breaks if valid input is received.
                     break;
                 }
                 else{
                     System.out.printf("%s You have entered a numerical value witch is negative. please only enter positive numbers in the terminal.  %s\n", ANSI_RED, ANSI_RESET);
-                    scanner.nextLine();
+                    scanner.nextInt();
                 }
 
             }

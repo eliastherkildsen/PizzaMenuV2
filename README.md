@@ -99,7 +99,7 @@ This program demonstrates fundamental programming principles like loops, arrays,
 
     [ ] Add break condistion descriptions for do-whiles -> comment from Casper. 
 
-    [ ] Fix github mess. 
+    [X] Fix github mess. 
     
     fix malformated string when number of item is more then 1 char long. 
 ![Screenshot 2023-10-15 at 20.31.54.png](..%2F..%2F..%2F..%2F..%2F..%2FScreenshot%202023-10-15%20at%2020.31.54.png)
